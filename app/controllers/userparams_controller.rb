@@ -35,7 +35,7 @@ end
 
 private
 def userparams_params
-params.require(:userparam).permit(:user_id, :firstname, :lastname, :country, :city, :dofb, :phone)
+params.require(:userparam).permit(:user_id, :firstname, :lastname, :country, :city, :dofb, :phone, :avatar)
 end
 
 def get_userparam
