@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'postcomments/new'
+
   get 'images/new'
 
   get 'posts/index'
@@ -14,6 +16,7 @@ Rails.application.routes.draw do
 resources :userparams
 
   resources :posts do
+  	resources :postcomments
   	resources :images
   end
 
