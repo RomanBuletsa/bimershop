@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'images/new'
+
   get 'posts/index'
 
   get 'userparams/show'
@@ -11,7 +13,9 @@ Rails.application.routes.draw do
 
 resources :userparams
 
-resources :posts
+  resources :posts do
+  	resources :images
+  end
 
 root to: 'pages#index'
   

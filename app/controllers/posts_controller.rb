@@ -3,6 +3,7 @@ before_action :authenticate_user!
 before_action :set_post, only: [:edit, :update, :destroy, :show]
 
 def show
+	@images = Image.where(post_id: @post.id)
 end
 
 def index
@@ -20,7 +21,7 @@ def create
 params[:post][:category_id] = params[:category_id]
 params[:post][:post]
 @post = Post.create(post_params)
-redirect_to posts_path
+redirect_to posts_path	
 end
 
 

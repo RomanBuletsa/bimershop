@@ -3,3 +3,8 @@
 <div>
 <h4><%= @post.text %></h4>
 </div>
+
+<% @images.each do |image| %>
+<p><%= image_tag(image.image) %></p>
+<hr>
+<% end %>
