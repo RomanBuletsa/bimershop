@@ -13,5 +13,5 @@ ActiveAdmin.register Post do
 # end
 
 
-permit_params :category_id, :name, :text
+permit_params :category_id, :name, :text, :photo
 end
