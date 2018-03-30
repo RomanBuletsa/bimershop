@@ -1,15 +1,19 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe Userparam, :type => :model do 
-  let!(:user){create(:user)}
-  subject{
-    build(:userparam)
-  }
-
-  context "validation" do
-    it "is valid with valid atributes" do
-      expect(subject).to be_valid
+  
+    context "when user phone is alreadytaken" do
+      before douserparam_dub = create(:userparam, user: user)
     end
-  end
+    if{should_not be_valid}
+    end
+
+    context "when user phone is not right format" do
+    if "should not be valid" do
+      subject.phone = "12345678"
+      expect(subject).to_not be_valid
+    end
+    end
+
 
 end
