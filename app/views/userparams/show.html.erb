@@ -1,0 +1,7 @@
+<h1>Hello, <%= @userparam.firstname%></h1> <%= link_to "Edit", edit_userparam_path(@userparam.id)%>
+Firstname:  <%= @userparam.firstname%> </br>
+Lastname:  <%= @userparam.lastname%> </br>
+Country:  <%= @userparam.country%></br>
+City:    <%= @userparam.city%></br>
+Data of birthday:  <%= @userparam.dofb.strftime("%b %d %Y")%></br>
+Phone: <%= @userparam.phone%>

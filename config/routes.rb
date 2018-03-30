@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
+  get 'posts/index'
+
+  get 'userparams/show'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   get 'pages/index'
 
   devise_for :users
 
+resources :userparams
+
+resources :posts
 
 root to: 'pages#index'
   

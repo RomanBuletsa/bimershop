@@ -1,0 +1,9 @@
+<div><h1>Вибери свою BMW!</h1></div>
+<div>
+<% @posts.each do |post| %>
+<div >
+<p class="carname"><b><%= post.category.name %></b></p>
+<p><center><%= link_to post.name, post_path(post.id)%></center></p>
+</div>
+<% end %>
+</div>
