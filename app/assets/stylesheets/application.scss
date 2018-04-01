@@ -16,9 +16,27 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+html, body{
+	 height: 100%;
+}
 .navbar-header{
 	width: auto !important;
 }
+#particles-js{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+#page-wrapper{
+	position: relative;
+	min-height: 1800px;
+	z-index: 2;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -58,13 +76,13 @@ body {
 .footer-top-layout [class*="col-sm-"] {
 	border-right: 2px solid #333333;
 	padding: 0 0 0 28px;
-	
+
 }
 .footer-top-layout {
 	color: #ffffff;
 }
 .footer-col-item {
-	min-height: 140px;
+	min-height: 120px;
 }
 
 address {
@@ -74,7 +92,7 @@ address {
 
 .footer-top-layout [class*="col-sm-"]:last-child {
 	border-right: medium none;
-} 
+}
 .footer-top-layout {
 	color: #ffffff;
 }

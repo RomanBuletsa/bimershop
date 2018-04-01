@@ -17,7 +17,10 @@ gem 'carrierwave', '~> 1.0'
 #gem Bootstrap
 gem 'bootstrap-sass', '~> 3.3.7'
 
-
+#Add particlesJS for animate background
+source 'https://rails-assets.org' do
+  gem 'rails-assets-particles.js'
+end
 #gem jquery
 gem 'jquery-rails'
 

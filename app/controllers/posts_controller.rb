@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-before_action :authenticate_user!
+
 before_action :set_post, only: [:edit, :update, :destroy, :show]
 
 def show
@@ -22,7 +22,7 @@ def create
 params[:post][:category_id] = params[:category_id]
 params[:post][:post]
 @post = Post.create(post_params)
-redirect_to posts_path	
+redirect_to posts_path
 end
 
 
