@@ -1,7 +1,9 @@
+<%= stylesheet_link_tag 'animate' %>
+
 <h1 class="showcarname"><%= @post.name %></h1>
 <div class="elements">
 <div class="showelem1"><%= image_tag(@post.photo, :class => "showcar") %></div>
-<div class="showelem2">
+<div class="showelem2 wow fadeInRight" data-wow-delay="0.6s" data-wow-offset="20">
 <h2 class="char"><center>Характеристики:</center></h2>
 <p align="center"> В розробці </p>
 
@@ -39,5 +41,7 @@
 
 <% end %>
 
-
-
+<%= javascript_include_tag 'wow.min'%>
+<script>
+  	new WOW().init();
+</script>
