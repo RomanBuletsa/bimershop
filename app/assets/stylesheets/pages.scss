@@ -2,11 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face{
+  font-family: "Aver"
+  src url('/assets/Aver_Bold_Italic')
+}
+
 body {background: #1D1B26;}
 .button-container a {
   text-decoration: none;
   outline: none;
-
   color: #A9A9A9;
   display: inline-block;
   position: relative;
@@ -14,7 +18,7 @@ body {background: #1D1B26;}
   border: 1px solid;
   border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
   border-image-slice: 1;
-  margin: 2% 20px;   font-family: 'Montserrat', sans-serif;
+  margin: 2% 50px;   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   overflow: hidden;
   font-size: 20px;
@@ -38,4 +42,14 @@ a:hover:before {
   bottom: 0%;
   top: auto;
   height: 100%;
+}
+.description-site{
+  font-family: 'Aver';
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 50px;
+  color: white;
+  font-size: 28px;
+  line-height: 38px;
+  text-indent: 30px;
 }
